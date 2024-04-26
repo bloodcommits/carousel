@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main {
+  transition: 0.5s ease;
+  overflow: hidden;
+  max-height: 100vh;
+
+}
+
+.navbar{
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.navbar img{
+  width: 150px;
+  object-fit: contain;
+}
+a{
+  text-decoration: none;
+}
+.contact{
+  background-color: lightblue;
+color: black;
+padding: 10px 15px;
+border-radius: 5px;
+border: none;
+cursor: pointer;
+font-weight: 500;
+
+}
+.contact:hover{
+  background-color: lightgreen;
+}
+
+.slide {
+  position: absolute;
+  transition: 1s ease;
+}
+
+#img {
+  height: 70vh;
+  width: 100vw;
+  object-fit: cover;
+  aspect-ratio: 1;
+  transition: opacity 0.5s ease;
+  position: relative;
+}
+
+
+
+.bt1 {
+  top: 35%;
+  left: 2%;
+}
+
+.bt2 {
+  top: 35%;
+  right: 2%;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 60px;
+  padding: 15px 30px;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255 , .721);
+  position: absolute;
+  z-index: 5;
+}
+
+.note{
+  bottom: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar{align-items: center;}
+  .navbar img{
+    width: 100px;
+    object-fit: contain;
+  }
+  .contact{
+    padding: 5px 7px;
+  }
+  #img{
+  height: 50vh;
+}
+
+}
